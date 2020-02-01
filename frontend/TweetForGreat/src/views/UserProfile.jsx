@@ -67,7 +67,7 @@ class UserProfile extends Component {
 </Col>
 <Col md={2}>
               <UserCard
-                bgImage="https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?fit=crop&fm=jpg&h=300&q=75&w=400"
+                bgImage="https://images.squarespace-cdn.com/content/v1/57336a3001dbae668182e7c3/1526674685014-M02QZMS2TPIKEUIT25DF/ke17ZwdGBToddI8pDm48kCDnvzZDSTqrZYB0qToMReZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0psyQQR5KrxgIm8QcotvsYtvUHnJsni5ivcu2RP0UO8zWN1uCXtq4fHLhtl5lYmmpQ/image-asset.jpeg?format=1500w"
                 avatar={avatar}
                 name="Ziyad Morsi"
                 userName="BigZLittleD"
