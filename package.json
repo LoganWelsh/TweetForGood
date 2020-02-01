@@ -2,6 +2,6 @@
   "name": "TweetForGood",
   "version": "1.0.0",
   "dependencies": {
-    
+    "mongoose": "^5.8.11"
   }
 }
