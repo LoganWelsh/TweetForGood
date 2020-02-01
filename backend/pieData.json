@@ -1,0 +1,25 @@
+{
+  "entries":
+          [
+            {
+              "name": "Coronavirus",
+              "percentage": 30
+            },
+            {
+              "name": "Australian fires",
+              "percentage": 20
+            },
+            {
+              "name": "Z",
+              "percentage": 10
+            },
+            {
+              "name": "Twitter API",
+              "percentage": 20
+            },
+            {
+              "name": "Caffeine",
+              "percentage": 20
+            }
+          ]
+}
