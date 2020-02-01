@@ -1,6 +1,8 @@
 {
   "name": "tweetforgood",
   "version": "1.0.0",
+  "main": "JSONtoMongo.js",
+  "type": "module",
   "dependencies": {
     "i": "^0.3.6",
     "mongoose": "^5.8.11"
