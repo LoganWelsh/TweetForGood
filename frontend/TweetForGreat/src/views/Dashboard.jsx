@@ -87,7 +87,11 @@ class Dashboard extends Component {
                 statsIconText="Updated now"
               />
             </Col>
-          </Row> */}
+          </Row> */
+          <Button>
+            fuck off
+        </Button>
+          }
           <Row>
             <Col md={8}>
               <Card
