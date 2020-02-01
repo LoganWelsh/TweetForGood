@@ -5,12 +5,11 @@
  */
 import * as fs from 'fs';
 import mongoose from 'mongoose';
-import Listing from './Schema.js';
+import testModel from './Schema.js';
 import config from './config.js';
-import ListingSchema from './Schema.js';
 
 let data;
-const url = config.db.uri
+const uri = config.db.uri
 
 mongoose.connection.on("connected", function(){
   console.log("Connected");
@@ -37,8 +36,8 @@ process.on("SIGNIT", function(){
 
 const Connect = () =>{
   mongoose.set('useUnifiedTopology', true);
-  mongoose.connect(url, {useNewUrlParser: true});
-}
+  mongoose.connect(uri, {useNewUrlParser: true});
+};
 
 /* 
   Instantiate a mongoose model for each listing object in the JSON file, 
@@ -48,14 +47,14 @@ const Connect = () =>{
   Remember that we needed to read in a file like we did in Bootcamp Assignment #1.
  */
 
-var del = ListingSchema.deleteMany();
-del.exec();
+// var del = ListingSchema.deleteMany();
+// del.exec();
 
-fs.readFile('package.json', 'utf8', (err, data) => {
+fs.readFile('helloworld.json', 'utf8', (err, data) => {
   if (err) throw err;
-  listingData = JSON.parse(data);
+  data = JSON.parse(data);
   Connect();
-  Listing.insertMany(listingData.entries)
+  testModel.insertMany(data.entries)
   .then(disconnect => mongoose.disconnect());
 });
 
