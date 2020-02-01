@@ -5,7 +5,7 @@
  */
 import * as fs from 'fs';
 import mongoose from 'mongoose';
-import testModel from './Schema.js';
+import model from './Schema.js';
 import config from './config.js';
 
 let data;
@@ -54,7 +54,7 @@ fs.readFile('pieData.json', 'utf8', (err, data) => {
   if (err) throw err;
   data = JSON.parse(data);
   Connect();
-  testModel.insertMany(data.entries)
+  model.pieDataModel.insertMany(data.entries)
   .then(disconnect => mongoose.disconnect());
 });
 

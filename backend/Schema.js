@@ -19,9 +19,7 @@ const pieDataSchema = new mongoose.Schema({
 /* Export the model to make it avaiable to other parts of your Node application */
 //Check out - https://mongoosejs.com/docs/guide.html#models
 export default {
-  models: {
-    web: mongoose.model('test', testSchema),
-    tweetToBack: mongoose.model(),
-    backToFront: mongoose.model(),
-  }
+  webModel: mongoose.model('test', testSchema),
+  pieDataModel: mongoose.model('pieData', pieDataSchema),
+  // backToFront: mongoose.model(),
 };
