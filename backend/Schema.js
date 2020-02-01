@@ -13,4 +13,4 @@ const testSchema = new mongoose.Schema({
 
 /* Export the model to make it avaiable to other parts of your Node application */
 //Check out - https://mongoosejs.com/docs/guide.html#models
-export default mongoose.model('test', testSchema);
+const testModel =  mongoose.model('test', testSchema);
