@@ -16,6 +16,7 @@
 
 */
 /*eslint-disable*/
+
 import React, { Component } from "react";
 import Toggle from "react-toggle";
 
@@ -218,3 +219,4 @@ class FixedPlugin extends Component {
 }
 
 export default FixedPlugin;
+

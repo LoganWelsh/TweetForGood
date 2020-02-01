@@ -50,7 +50,7 @@ class Dashboard extends Component {
     return (
       <div className="content">
         <Grid fluid>
-          <Row>
+          {/* <Row>
             <Col lg={3} sm={6}>
               <StatsCard
                 bigIcon={<i className="pe-7s-server text-warning" />}
@@ -87,13 +87,13 @@ class Dashboard extends Component {
                 statsIconText="Updated now"
               />
             </Col>
-          </Row>
+          </Row> */}
           <Row>
             <Col md={8}>
               <Card
                 statsIcon="fa fa-history"
                 id="chartHours"
-                title="Users Behavior"
+                title="Trending Disasters"
                 category="24 Hours performance"
                 stats="Updated 3 minutes ago"
                 content={

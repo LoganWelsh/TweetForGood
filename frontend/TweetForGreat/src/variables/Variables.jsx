@@ -548,7 +548,7 @@ var responsiveSales = [
   ]
 ];
 var legendSales = {
-  names: ["Open", "Click", "Click Second Time"],
+  names: ["Coronavirus", "Wildfires", "Earthquake", "Refugees"],
   types: ["info", "danger", "warning"]
 };
 
