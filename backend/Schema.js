@@ -11,6 +11,19 @@ const testSchema = new mongoose.Schema({
 //Check out - https://mongoosejs.com/docs/guide.html
 });
 
+const pieDataSchema = new mongoose.Schema({
+  name: {type: String, required: true},
+  percentage: {}
+
+//Check out - https://mongoosejs.com/docs/guide.html
+});
+
 /* Export the model to make it avaiable to other parts of your Node application */
 //Check out - https://mongoosejs.com/docs/guide.html#models
-export default mongoose.model('test', testSchema);
+export default {
+  models: {
+    web: mongoose.model('test', testSchema),
+    tweetToBack: mongoose.model(),
+    backToFront: mongoose.model(),
+  }
+};
