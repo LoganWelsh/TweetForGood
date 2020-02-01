@@ -20,7 +20,7 @@ import { NavLink } from "react-router-dom";
 
 import AdminNavbarLinks from "../Navbars/AdminNavbarLinks.jsx";
 
-import logo from "assets/img/reactlogo.png";
+
 
 class Sidebar extends Component {
   constructor(props) {
@@ -48,7 +48,6 @@ class Sidebar extends Component {
         id="sidebar"
         className="sidebar"
         data-color={this.props.color}
-        data-image={this.props.image}
       >
           {this.props.hasImage ? (
             <div className="sidebar-background" style={sidebarBackground} />
@@ -61,14 +60,14 @@ class Sidebar extends Component {
             className="simple-text logo-mini"
           >
             <div className="logo-img">
-              <img src={logo} alt="logo_image" />
+              <i class= "pe-7s-leaf" />
             </div>
           </a>
           <a
             href="https://www.creative-tim.com?ref=lbd-sidebar"
             className="simple-text logo-normal"
           >
-            Tweet For Good
+            Trash Sorter
           </a>
         </div>
         <div className="sidebar-wrapper">

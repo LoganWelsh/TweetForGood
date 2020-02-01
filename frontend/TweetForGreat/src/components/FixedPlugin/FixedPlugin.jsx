@@ -17,6 +17,7 @@
 */
 /*eslint-disable*/
 
+
 import React, { Component } from "react";
 import Toggle from "react-toggle";
 
@@ -34,6 +35,7 @@ class FixedPlugin extends Component {
       bgImage: this.props.bgImage
     };
   }
+  
   handleClick = () => {
     this.props.handleFixedClick();
   };
@@ -41,6 +43,7 @@ class FixedPlugin extends Component {
     this.props.handleHasImage(!this.state.bg_checked);
     this.setState({ bg_checked: !this.state.bg_checked });
   };
+  
   render() {
     return (
       <div className="fixed-plugin">
@@ -216,6 +219,7 @@ class FixedPlugin extends Component {
       </div>
     );
   }
+  
 }
 
 export default FixedPlugin;

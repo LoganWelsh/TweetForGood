@@ -17,7 +17,8 @@
 */
 import React, { Component } from "react";
 import ChartistGraph from "react-chartist";
-import { Grid, Row, Col } from "react-bootstrap";
+import { Grid, Row, Col, ButtonToolbar, Button } from "react-bootstrap";
+
 
 import { Card } from "components/Card/Card.jsx";
 import { StatsCard } from "components/StatsCard/StatsCard.jsx";
@@ -45,6 +46,9 @@ class Dashboard extends Component {
       legend.push(json["names"][i]);
     }
     return legend;
+  }
+  fileSelectedHandler = event =>{
+    console.log(event);
   }
   render() {
     return (
@@ -88,11 +92,23 @@ class Dashboard extends Component {
               />
             </Col>
           </Row> */
-          <Button>
-            fuck off
-        </Button>
+        //   <input type="file" name="file" onChange={this.onChangeHandler}/>   
+        //  onChangeHandler=event=>{
+
+        //   console.log(event.target.files[0])
+        //  }
           }
-          <Row>
+<input type="file" onChange={this.fileSelectedHandler}/>
+
+          <ButtonToolbar>
+          <Button variant="primary" >fuck off</Button> 
+        </ButtonToolbar>
+
+    
+          
+          
+          
+           {/* <Row>
             <Col md={8}>
               <Card
                 statsIcon="fa fa-history"
@@ -134,9 +150,9 @@ class Dashboard extends Component {
                 }
               />
             </Col>
-          </Row>
+          </Row> */}
 
-          <Row>
+          {/* <Row>
             <Col md={6}>
               <Card
                 id="chartActivity"
@@ -175,7 +191,7 @@ class Dashboard extends Component {
                 }
               />
             </Col>
-          </Row>
+          </Row> */}
         </Grid>
       </div>
     );
