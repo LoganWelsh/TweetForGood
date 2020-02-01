@@ -13,9 +13,7 @@ const testSchema = new mongoose.Schema({
 
 const pieDataSchema = new mongoose.Schema({
   name: {type: String, required: true},
-  percentage: {}
-
-//Check out - https://mongoosejs.com/docs/guide.html
+  percentage: {type: Number, required: true}
 });
 
 /* Export the model to make it avaiable to other parts of your Node application */
